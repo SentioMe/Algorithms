@@ -52,6 +52,7 @@
     <Compile Include="Questions\Q005_Smallest_multiple.cs" />
     <Compile Include="Questions\Q006_Sum_square_difference.cs" />
     <Compile Include="Questions\Q007_Nth_prime.cs" />
+    <Compile Include="Questions\Q008_Largest_product_in_a_series.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

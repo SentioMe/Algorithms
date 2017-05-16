@@ -13,7 +13,7 @@ namespace Project_Euler
     {
         static void Main(string[] args)
         {
-            var question = new Q007_Nth_prime();
+            var question = new Q008_Largest_product_in_a_series();
 
             if (question.Ask())
                 question.Answer(question.Arguments);

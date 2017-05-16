@@ -36,7 +36,7 @@ namespace Algorithms.Internal
 
             string read = Console.ReadLine();
             if (ulong.TryParse(read, out result) == false)
-                throw new InvalidCastException("\nYou entered value that can not be converted to ulong type.\nRead value is " + read);
+                throw new InvalidCastException("You entered value that can not be converted to ulong type.Read value is " + read);
 
             return result;
         }
@@ -52,7 +52,7 @@ namespace Algorithms.Internal
                 foreach (var pattern in _replacements)
                     assertion = pattern.Key.Replace(assertion, pattern.Value);
 
-                throw new Exception(string.Format("\nThe entered value violates the condition of '{0}'\nRead value is {1}", assertion.Trim(), result.ToString()));
+                throw new Exception(string.Format("The entered value violates the condition of '{0}'Read value is {1}", assertion.Trim(), result.ToString()));
             }
 #endif
             return result;

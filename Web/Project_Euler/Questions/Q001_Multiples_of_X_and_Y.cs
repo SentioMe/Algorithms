@@ -7,7 +7,7 @@ namespace Project_Euler
         public bool Ask()
         {
             Output.Reset();
-            Output.Ask("If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9.\nThe sum of these multiples is 23.\nFind the sum of all the multiples of X or Y below N.");
+            Output.Ask("If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9.The sum of these multiples is 23.Find the sum of all the multiples of X or Y below N.");
             
             return true;
         }
@@ -19,8 +19,8 @@ namespace Project_Euler
                 ulong N = Input.Decimal("Please enter the natural number N.");
                 var args = new ulong[] {
                 N,
-                Input.Decimal("Please enter a natural number X less than N.", (X) => X <= N),
-                Input.Decimal("Please enter a natural number Y less than N.", (Y) => Y <= N)};
+                Input.Decimal("Please enter a natural number X less than N.", (X) => X < N),
+                Input.Decimal("Please enter a natural number Y less than N.", (Y) => Y < N)};
 
                 return args;
             }
