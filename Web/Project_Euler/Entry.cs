@@ -13,7 +13,7 @@ namespace Project_Euler
     {
         static void Main(string[] args)
         {
-            var question = new Q008_Largest_product_in_a_series();
+            var question = new Q009_Special_Pythagorean_triplet();
 
             if (question.Ask())
                 question.Answer(question.Arguments);
