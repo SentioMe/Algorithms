@@ -34,7 +34,7 @@ namespace Project_Euler
             get
             {
                 var digits = (ulong)Defined1000digitsValue.Length;
-                return new int[] { (int)Input.Decimal("Please enter a natural number N less than 1000-digits.", (A) => A < digits) };
+                return new int[] { (int)Input.Decimal("Please enter a natural number N less than 1000-digits.", (N) => N < digits) };
             }
         }
 

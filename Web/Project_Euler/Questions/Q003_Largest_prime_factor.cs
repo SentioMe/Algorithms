@@ -15,7 +15,7 @@ namespace Project_Euler
         public bool Ask()
         {
             Output.Reset();
-            Output.Ask("The prime factors of 13195 are 5, 7, 13 and 29.What is the largest prime factor of the number N?");
+            Output.Ask("The prime factors of 13195 are 5, 7, 13 and 29.\nWhat is the largest prime factor of the number N?");
 
             return true;
         }
