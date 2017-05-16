@@ -13,7 +13,7 @@ namespace Project_Euler
     {
         static void Main(string[] args)
         {
-            var question = new Q009_Special_Pythagorean_triplet();
+            var question = new Q010_Summation_of_primes();
 
             if (question.Ask())
                 question.Answer(question.Arguments);

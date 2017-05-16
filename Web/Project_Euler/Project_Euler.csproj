@@ -54,6 +54,7 @@
     <Compile Include="Questions\Q007_Nth_prime.cs" />
     <Compile Include="Questions\Q008_Largest_product_in_a_series.cs" />
     <Compile Include="Questions\Q009_Special_Pythagorean_triplet.cs" />
+    <Compile Include="Questions\Q010_Summation_of_primes.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
