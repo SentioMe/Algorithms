@@ -22,11 +22,11 @@ namespace Project_Euler
                 var sigmaK = MathExtends.SigmaK_ToN(N);
                 var sigmaSquareK = MathExtends.SigmaSqureK_ToN(N);
 
-                Output.Debug("=====================================");
+                Output.Debug(Output.DebugLine);
                 Output.Debug("S1 = k (k to N) = " + sigmaK);
                 Output.Debug("S1^2 = " + sigmaK * sigmaK);
                 Output.Debug("S2 = k^2 (k to N) = " + sigmaSquareK);
-                Output.Debug("=====================================");
+                Output.Debug(Output.DebugLine);
 
                 return "S1^2 - S2 = " + (sigmaK * sigmaK - sigmaSquareK);
 

@@ -25,7 +25,7 @@ namespace Project_Euler
              */
             Output.Answer(() =>
             {
-                Output.Debug("=====================================");
+                Output.Debug(Output.DebugLine);
                 ulong result = 1;
                 for (ulong i = 2; i <= N; ++i)
                 {
@@ -41,7 +41,7 @@ namespace Project_Euler
                         Output.Debug("= {0}", result);
                     }
                 }
-                Output.Debug("=====================================");
+                Output.Debug(Output.DebugLine);
 
                 return result.ToString();
             }, "Using factorial decomposition");

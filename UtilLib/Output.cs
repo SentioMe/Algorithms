@@ -7,6 +7,7 @@ namespace Algorithms.Internal
     public static class Output
     {
         static int MethodFlag = 1;
+        public const string DebugLine = "=====================================";
 
         public static void Reset()
         {

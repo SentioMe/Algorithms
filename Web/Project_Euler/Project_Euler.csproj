@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Entry.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Questions\Q020_Factorial_digit_sum.cs" />
     <Compile Include="Questions\Q001_Multiples_of_X_and_Y.cs" />
     <Compile Include="Questions\Q002_Even_Fibonacci_numbers.cs" />
     <Compile Include="Questions\Q003_Largest_prime_factor.cs" />

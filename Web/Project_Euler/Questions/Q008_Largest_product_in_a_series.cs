@@ -56,14 +56,14 @@ namespace Project_Euler
                     }
                 }
 
-                Output.Debug("=====================================");
+                Output.Debug(Output.DebugLine);
                 Output.DebugWithOutLF("{0}", digitList[indices[0]]);
                 for (int i = 1; i < adjLength; ++i)
                 {
                     Output.DebugWithOutLF(" * {0}", digitList[indices[i]]);
                 }
                 Output.Debug(" = {0}", maxValue);
-                Output.Debug("=====================================");
+                Output.Debug(Output.DebugLine);
 
                 return maxValue.ToString();
 

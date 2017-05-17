@@ -22,9 +22,9 @@ namespace Project_Euler
                         var c = N - a - b;
                         if (c * c == a * a + b * b)
                         {
-                            Output.Debug("=====================================");
+                            Output.Debug(Output.DebugLine);
                             Output.Debug("a, b, c, = {0}, {1}, {2}", a, b, c);
-                            Output.Debug("=====================================");
+                            Output.Debug(Output.DebugLine);
                             return (a * b * c).ToString();
                         }
                     }
@@ -65,9 +65,9 @@ namespace Project_Euler
 
                     if (a * a + b * b == c * c)
                     {
-                        Output.Debug("=====================================");
+                        Output.Debug(Output.DebugLine);
                         Output.Debug("a, b, c, = {0}, {1}, {2}", a, b, c);
-                        Output.Debug("=====================================");
+                        Output.Debug(Output.DebugLine);
                         return (a * b * c).ToString();
                     }
                 }
@@ -118,9 +118,9 @@ namespace Project_Euler
 
                             var c = pri_c * scale;
 
-                            Output.Debug("=====================================");
+                            Output.Debug(Output.DebugLine);
                             Output.Debug("a, b, c, = {0}, {1}, {2}", a, b, c);
-                            Output.Debug("=====================================");
+                            Output.Debug(Output.DebugLine);
                             return (a * b * c).ToString();
                         }
 

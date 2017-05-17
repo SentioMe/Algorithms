@@ -6,15 +6,14 @@
  *  ~jp : このプロジェクトのソースは、上記のサイトのアルゴリズムの問題に基づいて、いくつかの修正して作成されました。
  *        出力されるテキストは、原文を引用しました。
  */
-
 namespace Project_Euler
 {
     class Entry
     {
         static void Main(string[] args)
         {
-            var question = new Q012_Highly_divisible_triangular_number();
-            
+            var question = new Q020_Factorial_digit_sum();
+
             if (question.Ask())
                 question.Answer(question.Arguments);
         }

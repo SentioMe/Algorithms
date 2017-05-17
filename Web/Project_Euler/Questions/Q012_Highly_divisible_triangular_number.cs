@@ -43,9 +43,9 @@ namespace Project_Euler
                         gcmCount *= (factor + 1);
                 }
 
-                Output.Debug("=====================================");
+                Output.Debug(Output.DebugLine);
                 Output.Debug("{0} Triangle number have {1} divisors", current, gcmCount);
-                Output.Debug("=====================================");
+                Output.Debug(Output.DebugLine);
 
                 return triangularNum.ToString();
             }, "Using prime factorization");
