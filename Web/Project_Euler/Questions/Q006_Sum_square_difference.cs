@@ -2,19 +2,11 @@
 
 namespace Project_Euler
 {
-    public class Q006_Sum_square_difference : IQuestionable<ulong>
+    public class Q006_Sum_square_difference : QuestionAbstract<ulong>
     {
-        public bool Ask()
-        {
-            Output.Reset();
-            Output.Ask("The sum of the squares of the first ten natural numbers is,\n\n1 ^ 2 + 2 ^ 2 + ... + 10 ^ 2 = 385\n\nThe square of the sum of the first ten natural numbers is,\n\n(1 + 2 + ... + 10) ^ 2 = 552 = 3025\n\nHence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 - 385 = 2640.\nFind the difference between the sum of the squares of the first N natural numbers and the square of the sum.");
+        public override ulong[] Arguments { get { return new ulong[] { Input.Decimal("Please enter the natural number N.") }; } }
 
-            return true;
-        }
-
-        public ulong[] Arguments { get { return new ulong[] { Input.Decimal("Please enter the natural number N.") }; } }
-
-        public void Answer(ulong[] args)
+        public override void Answer(ulong[] args)
         {
             Output.Enter();
 

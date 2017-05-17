@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.IO;
 
 namespace Algorithms.Internal
 {
@@ -18,10 +19,28 @@ namespace Algorithms.Internal
             var methodBase = stackTrace.GetFrame(1).GetMethod();
             var Class = methodBase.ReflectedType;
 
-            Console.WriteLine("-{0}-", Class.Name);
+            Console.WriteLine(Class.Name);
             Console.WriteLine(message);
 
             Enter();
+        }
+
+        const string SplitString = "==================================================================";
+        public static void Ask<T>(QuestionAbstract<T> question)
+            where T : IConvertible, IComparable
+        {
+            var name = question.GetType().Name;
+
+            var projectPath = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
+            using (var reader = File.OpenText(projectPath + "\\Questions\\Question_Text.txt"))
+            {
+                var text = reader.ReadToEnd();
+                int start = text.IndexOf(name);
+                int end = text.IndexOf(SplitString, start);
+
+                var sub = text.Substring(start, end - start);
+                Console.WriteLine(sub);
+            }
         }
 
         public static void Answer(Func<string> onAnswer, string desc)

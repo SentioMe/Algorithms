@@ -3,19 +3,11 @@ using System.Collections.Generic;
 
 namespace Project_Euler
 {
-    public class Q010_Summation_of_primes : IQuestionable<ulong>
+    public class Q010_Summation_of_primes : QuestionAbstract<ulong>
     {
-        public bool Ask()
-        {
-            Output.Reset();
-            Output.Ask("The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.\nFind the sum of all the primes below N.");
+        public override ulong[] Arguments { get { return new ulong[] { Input.Decimal("Please enter the natural number N.") }; } }
 
-            return true;
-        }
-
-        public ulong[] Arguments { get { return new ulong[] { Input.Decimal("Please enter the natural number N.") }; } }
-
-        public void Answer(ulong[] args)
+        public override void Answer(ulong[] args)
         {
             Output.Enter();
 

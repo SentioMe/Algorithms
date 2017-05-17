@@ -42,7 +42,7 @@
   <ItemGroup>
     <Compile Include="Extends.cs" />
     <Compile Include="Input.cs" />
-    <Compile Include="IQuestionable.cs" />
+    <Compile Include="QuestionAbstract.cs" />
     <Compile Include="Output.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

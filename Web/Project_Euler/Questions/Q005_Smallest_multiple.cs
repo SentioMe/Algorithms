@@ -4,19 +4,11 @@ using System.Collections.Generic;
 
 namespace Project_Euler
 {
-    public class Q005_Smallest_multiple : IQuestionable<ulong>
+    public class Q005_Smallest_multiple : QuestionAbstract<ulong>
     {
-        public bool Ask()
-        {
-            Output.Reset();
-            Output.Ask("2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.\nWhat is the smallest positive number that is evenly divisible by all of the numbers from 1 to N?");
+        public override ulong[] Arguments { get { return new ulong[] { Input.Decimal("Please enter the natural number N.") }; } }
 
-            return true;
-        }
-
-        public ulong[] Arguments { get { return new ulong[] { Input.Decimal("Please enter the natural number N.") }; } }
-
-        public void Answer(ulong[] args)
+        public override void Answer(ulong[] args)
         {
             Output.Enter();
 

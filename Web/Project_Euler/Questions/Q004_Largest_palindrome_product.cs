@@ -3,19 +3,11 @@ using System;
 
 namespace Project_Euler
 {
-    public class Q004_Largest_palindrome_product : IQuestionable<int>
+    public class Q004_Largest_palindrome_product : QuestionAbstract<int>
     {
-        public bool Ask()
-        {
-            Output.Reset();
-            Output.Ask("A palindromic number reads the same both ways.\nThe largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.\nFind the largest palindrome made from the product of two N-digit numbers.");
-            
-            return true;
-        }
+        public override int[] Arguments { get { return new int[] { (int)Input.Decimal("Please enter the digit P.") }; } }
 
-        public int[] Arguments { get { return new int[] { (int)Input.Decimal("Please enter the digit P.") }; } }
-
-        public void Answer(int[] args)
+        public override void Answer(int[] args)
         {
             Output.Enter();
 

@@ -10,19 +10,11 @@ namespace Project_Euler
      *  ~jp : 素数は1と自分自身だけ除数で持つ数です。
      *        任意の数Xを素数の乗算だけで表現したものを「素因数分解」と呼ばれ、この時、この素数達のXの「素因数（Prime factor）」と呼ばれます。
      */
-    public class Q003_Largest_prime_factor : IQuestionable<ulong>
+    public class Q003_Largest_prime_factor : QuestionAbstract<ulong>
     {
-        public bool Ask()
-        {
-            Output.Reset();
-            Output.Ask("The prime factors of 13195 are 5, 7, 13 and 29.\nWhat is the largest prime factor of the number N?");
+        public override ulong[] Arguments { get { return new ulong[] { Input.Decimal("Please enter the natural number N.") }; } }
 
-            return true;
-        }
-
-        public ulong[] Arguments { get { return new ulong[] { Input.Decimal("Please enter the natural number N.") }; } }
-
-        public void Answer(ulong[] args)
+        public override void Answer(ulong[] args)
         {
             Output.Enter();
             

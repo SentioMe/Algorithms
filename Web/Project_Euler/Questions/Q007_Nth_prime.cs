@@ -4,19 +4,11 @@ using System.Collections.Generic;
 
 namespace Project_Euler
 {
-    public class Q007_Nth_prime : IQuestionable<ulong>
+    public class Q007_Nth_prime : QuestionAbstract<ulong>
     {
-        public bool Ask()
-        {
-            Output.Reset();
-            Output.Ask("By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.\nWhat is the Nth prime number?");
+        public override ulong[] Arguments { get { return new ulong[] { Input.Decimal("Please enter the natural number N.") }; } }
 
-            return true;
-        }
-
-        public ulong[] Arguments { get { return new ulong[] { Input.Decimal("Please enter the natural number N.") }; } }
-
-        public void Answer(ulong[] args)
+        public override void Answer(ulong[] args)
         {
             Output.Enter();
 

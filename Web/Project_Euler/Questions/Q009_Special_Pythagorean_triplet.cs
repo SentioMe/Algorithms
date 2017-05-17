@@ -3,19 +3,11 @@ using System;
 
 namespace Project_Euler
 {
-    public class Q009_Special_Pythagorean_triplet : IQuestionable<ulong>
+    public class Q009_Special_Pythagorean_triplet : QuestionAbstract<ulong>
     {
-        public bool Ask()
-        {
-            Output.Reset();
-            Output.Ask("A Pythagorean triplet is a set of three natural numbers, a < b < c, for which,\n\na^2 + b^2 = c^2\nFor example, 3^2 + 4^2 = 9 + 16 = 25 = 5^2.\n\nThere exists exactly one Pythagorean triplet for which a + b + c = X.\nFind the product abc.");
-            
-            return true;
-        }
+        public override ulong[] Arguments { get { return new ulong[] { Input.Decimal("Please enter the natural number X.") }; } }
 
-        public ulong[] Arguments { get { return new ulong[] { Input.Decimal("Please enter the natural number X.") }; } }
-
-        public void Answer(ulong[] args)
+        public override void Answer(ulong[] args)
         {
             Output.Enter();
 

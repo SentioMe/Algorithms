@@ -2,17 +2,9 @@
 
 namespace Project_Euler
 {
-    public class Q001_Multiples_of_X_and_Y : IQuestionable<ulong>
+    public class Q001_Multiples_of_X_and_Y : QuestionAbstract<ulong>
     {
-        public bool Ask()
-        {
-            Output.Reset();
-            Output.Ask("If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9.\nThe sum of these multiples is 23.Find the sum of all the multiples of X or Y below N.");
-            
-            return true;
-        }
-
-        public ulong[] Arguments
+        public override ulong[] Arguments
         {
             get
             {
@@ -26,7 +18,7 @@ namespace Project_Euler
             }
         }
 
-        public void Answer(ulong[] args)
+        public override void Answer(ulong[] args)
         {
             Output.Enter();
 
