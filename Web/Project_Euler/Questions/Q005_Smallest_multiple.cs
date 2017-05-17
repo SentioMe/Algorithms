@@ -60,7 +60,7 @@ namespace Project_Euler
             var factors = new List<ulong>();
             var range = (ulong)Math.Sqrt(value);
 
-            while (value.IsPrimeNumber(range) == false)
+            while (MathExtends.IsPrimeNumber(value, range) == false)
             {
                 for (ulong i = 2; i <= range; ++i)
                 {

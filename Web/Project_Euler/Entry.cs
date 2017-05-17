@@ -13,7 +13,7 @@ namespace Project_Euler
     {
         static void Main(string[] args)
         {
-            var question = new Q010_Summation_of_primes();
+            var question = new Q012_Highly_divisible_triangular_number();
 
             if (question.Ask())
                 question.Answer(question.Arguments);

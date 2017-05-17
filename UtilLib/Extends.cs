@@ -3,15 +3,6 @@ namespace Algorithms.Internal
 {
     public static class DecimalExtends
     {
-        public static bool IsPrimeNumber(this ulong value, ulong range)
-        {
-            for (ulong i = 2; i <= range; ++i)
-                if (value % i == 0)
-                    return false;
-
-            return true;
-        }
-
         public static string ToOrdinal(this ulong number)
         {
             const string TH = "th";
@@ -31,6 +22,23 @@ namespace Algorithms.Internal
                 case 3: return s + "rd";
                 default: return s + TH;
             }
+        }
+
+        
+    }
+
+    public static class MathExtends
+    {
+        public static ulong SigmaK_ToN(ulong n) { return n * (n + 1) / 2; }
+        public static ulong SigmaSqureK_ToN(ulong n) { return n * (n + 1) * (2 * n + 1) / 6; }
+
+        public static bool IsPrimeNumber(ulong value, ulong range)
+        {
+            for (ulong i = 2; i <= range; ++i)
+                if (value % i == 0)
+                    return false;
+
+            return true;
         }
     }
 }

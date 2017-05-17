@@ -43,7 +43,7 @@ namespace Project_Euler
 
                 while (value > 1)
                 {
-                    if (N % value == 0 && value.IsPrimeNumber((ulong)Math.Sqrt(value)))
+                    if (N % value == 0 && MathExtends.IsPrimeNumber(value, (ulong)Math.Sqrt(value)))
                         break;
 
                     value -= 2;

@@ -27,8 +27,8 @@ namespace Project_Euler
 
             Output.Answer(() =>
             {
-                var sigmaK = N * (N + 1) / 2;
-                var sigmaSquareK = N * (N + 1) * (2 * N + 1) / 6;
+                var sigmaK = MathExtends.SigmaK_ToN(N);
+                var sigmaSquareK = MathExtends.SigmaSqureK_ToN(N);
 
                 Output.Debug("=====================================");
                 Output.Debug("S1 = k (k to N) = " + sigmaK);
