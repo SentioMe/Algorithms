@@ -1,6 +1,11 @@
 ﻿using Algorithms.Internal;
 using System.Numerics;
-using System.Collections.Generic;
+
+/*
+ * @note
+ *  ~kr : 숫자를 문자의 배열로 변환해 관리한다면, BigInteger없이도 가능하다고 생각됩니다.
+ *  ~jp : 数値を文字の配列として変換して管理すれば、BigIntegerなしで可能だと思っています。
+ */
 
 namespace Project_Euler
 {
